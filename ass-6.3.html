@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <title>for-in loop</title>
+		
+
+		<script>
+			var suni = [['eng', 30], ['sci', 57], ['math', 48]];
+			for (var item in suni){
+				console.log(suni[item]);
+			}
+			if (suni[item]>=35)
+				{
+					alert("pass");
+					
+				}
+			else{
+				alert("fail");
+			}
+
+var Avgmarks = 0;
+
+for (var i=0; i < suni.length; i++) {
+        Avgmarks += suni[i][1];
+        var avg = (Avgmarks/suni.length);
+}
+
+alert("Average grade: " + (Avgmarks)/suni.length);
+
+        if (avg < 35){
+          console.log("Grade : F");      
+          } 
+        else if (avg < 40) {
+                console.log("Grade : D"); 
+                  } 
+        else if (avg < 80) 
+             {
+                console.log("Grade : C"); 
+        } else if (avg < 90) {
+                console.log("Grade : B"); 
+        } else if (avg < 100) {
+                console.log("Grade : A"); 
+}
+
+		
+				
+		
+		</script>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
